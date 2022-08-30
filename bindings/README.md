@@ -110,6 +110,8 @@ cd deepstream_python_apps/bindings
 mkdir build
 cd build
 cmake ..
+# build in jetson
+# cmake .. -DPIP_PLATFORM=linux_aarch64
 make
 ```
 
@@ -246,6 +248,8 @@ Following commands can be used to install the generated pip wheel.
 <a name="install_wheel"></a>
 ### 3.1 Installing the pip wheel
 ```bash
+# may require sudo apt install libgirepository1.0-dev
+
 pip3 install ./pyds-1.1.4-py3-none*.whl
 ```
 
